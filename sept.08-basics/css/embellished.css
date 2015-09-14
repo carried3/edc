@@ -1,0 +1,23 @@
+body{
+	font-family: 'Varela Round', sans-serif;
+
+
+}
+h1{
+	cursor: auto;
+	font-size: 51.3333px;
+	text-align: center;
+	font-weight: bold;
+}	
+	
+h1 a{
+	color: #6C2A6A;
+	text-decoration: none;
+
+}
+p{
+	text-align: center;
+}
+p a{
+	color: #3C3C3C;
+}

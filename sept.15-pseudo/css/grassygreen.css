@@ -86,4 +86,27 @@ h3 {
 	padding: 10px;
 	
 }
+.sec1{
+	width: 60%;
+	float: left;
 
+}
+.sec2{
+width: 40%;
+float: left;
+
+
+
+}
+
+.h3{
+	color: hsl(168, 76%, 36%);
+}
+.style2 li {
+	border-top: 1px solid gray;
+	padding: 12px 0;
+	list-style: none;
+}
+div{
+	/*width: 30%;*/
+}

@@ -12,10 +12,11 @@ ul, {
 	padding: 0;
 }
 h1 {
-	margin: 0;
+	margin: 0 auto;
 	float: left;
 	font-size: 30px;
 	display: block;
+	padding-left: 60px; 
 }
 a {
 	color: inherit;
@@ -99,6 +100,7 @@ li:hover {
 	text-align: center;
 	line-height: 150%;
 	padding-left: 20px;
+	padding-bottom: 40px;
 }
 .button1 {
 	margin-left: 41%;
@@ -143,6 +145,7 @@ img {
 	text-align: center;
 	margin-bottom: 40px;
 	padding-left: 20px;
+	padding-bottom: 40px;
 
 }
 

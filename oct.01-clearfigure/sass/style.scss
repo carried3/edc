@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Chivo:400,900);
+body {
+	font-family: 'Chivo', sans-serif;
+}
+header {
+	.wrapper {
+	background-size: 100%;
+    padding: 95px 0em 30px 0em;
+    background: hsl(0, 0%, 20%);
+	}
+	div {
+		display: block;
+	}
+	#menu{
+		background-color: hsl(330, 100%, 35%);
+	}
+}

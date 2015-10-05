@@ -1,0 +1,50 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+$black: hsla(0, 100%, 0%, 1);
+$purple: hsla(290, 100%, 30%, 1);
+$pink: hsla(311, 100%, 50%, 1);
+$green: hsla(109, 100%, 28%, 1);
+$blue: hsla(254, 100%, 28%, 1);
+$size: 24px;
+
+
+
+%clearfix{
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+%gradient {
+	background-image:  linear-gradient(to top, $black, $purple);
+}
+
+ul {
+	@extend %clearfix;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+}
+li {
+	@extend %clearfix;
+	background-color: $pink;
+	width: 50%;
+	float: left;
+	text-align: center;
+	i{
+		@extend %gradient;
+		float: right;
+	}
+	span{
+		@extend %gradient;
+		float: left;
+	} 
+}
+
+
+
+
+
+

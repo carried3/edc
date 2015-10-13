@@ -1,0 +1,200 @@
+/* sass goes here */
+// @import "reset";
+
+
+
+
+body {
+	font: {
+		family: sans-serif;
+		size: 100%;
+	}
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+}
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px dotted black;
+}
+
+
+%clearfix {
+	&::before, &::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+%content {
+	padding: 50px 5vw;
+}
+
+.btn {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	&:hover {
+		background-color: hsla(0, 0%, 0%, .3), 
+	}
+
+}
+
+.icon {
+	$ico: 3vw;
+	$icohalf: ($ico / 2);
+	$icothird: ($ico / 3);
+	$icocolor: hsla(0, 0%, 0%, .15);
+	background-color: $icocolor;
+	display: inline-block;
+	width: $ico;
+	text-align: center;
+	height: $icohalf;
+	line-height: $icohalf;
+	position: relative;
+	margin-bottom: $ico;
+	&::before {
+		position: absolute;
+		bottom: 100%;
+		content: "";
+		display: block;
+		border: {
+			color: transparent transparent $icocolor transparent; 
+			width: $icohalf $icohalf $icothird $icohalf;
+			style: solid;
+		}
+
+	}
+	&::after {
+		position: absolute;
+		top: 100%;
+		content: "";
+		display: block;
+		border: {
+			color: $icocolor transparent  transparent transparent; 
+			width: $icothird $icohalf $icohalf $icohalf;
+			style: solid;
+		}
+	}
+
+}
+header {
+	@extend %content;
+	color: white;
+	a {
+		border: none;
+	}
+	overflow: hidden;
+	background: {
+		image: linear-gradient(hsla(0, 0%, 0%, .3), hsla(0, 0%, 0%, .3)), url('../img/slide01.jpg');
+		position: center;
+		size: cover;
+		repeat: no-repeat;
+	}
+}
+nav {
+	@extend %clearfix;
+	h1 {
+		float: left;
+	}
+	ul {
+		float: right;
+	}
+	li {
+		display: inline-block;
+	}
+}
+h2 {
+	text-align: center;
+	margin-top: 15vw;
+	margin-bottom: 15vw;
+	font-size: 3vw;
+	text-transform: uppercase;
+}
+
+#about {
+	@extend %content;
+	@extend %clearfix;
+	div {
+		width: 33%;
+		margin-right: 7%;
+		float: left;
+	}
+	img {
+		width: 60%;
+		height: auto;
+		float: right;
+	}
+}
+
+#promos {
+		@extend %clearfix;
+	div {
+		box-sizing: border-box;
+		width: 33.3333%;
+		float: left;
+		@extend %content;
+	
+	}
+}
+#blog {
+	background-color: hsla(0, 0%, 0%, .10);
+	@extend %content;
+	.grid {
+		@extend %clearfix;
+		div {
+			&:nth-of-type(3n) {
+				margin-right: 0;
+			}
+			float: left;
+			width: 30%;
+			margin-right: 5%;
+			margin-bottom: 5%;
+			background-color: white;
+		}
+	}
+	span {
+		display: inline-block;
+		padding: 2.5vw;
+	}
+
+}
+img {
+	width: 100%;
+	height: auto;
+	border-bottom: 20px solid hsla(0, 0%, 0%, .10);
+}
+#contact {
+	& > div {
+		width: 50%;
+		float: left;
+		@extend %content;
+		box-sizing: border-box;
+	}
+	fieldset {
+		border: none;
+		padding: 0;
+		input, textarea {
+			width: 100%,
+
+		}
+		&:first-child {
+			label {
+				width: 50%;
+			}
+		}
+	}
+	label {
+		display: block;
+		float: left;
+		width: 100%;
+	}
+}	

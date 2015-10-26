@@ -52,7 +52,7 @@ span {
 		color: yellow;
 		@include size (1vw);
 		width: 1vw;
-		@include size ($x);
+		@include size (1vw);
 		&::before {
 			content: "\f111";
 		}

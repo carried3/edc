@@ -1,0 +1,260 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+
+
+
+body {
+	font-family: sans-serif;
+
+}
+
+header {
+	background-image: url(../img/header-bg.jpg);
+	height: 630px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	nav {
+		display: flex;
+		flex-direction: row;
+		padding: 3vw;
+		align-items: baseline;
+		width: 100%;
+		justify-content: space-between;
+		margin-left: 3vw;
+
+		
+	ul {
+			
+		display: flex;
+		flex-direction: row;
+		margin-right: 3vw;
+			// align-items: baseline;
+
+	   }
+	li	{	
+		padding: 10px 30px;
+			a {
+				color: $black;
+				font-weight: 700;
+			}
+		}
+	li:last-child {
+		display: flex;
+		background-color: $black;
+		align-items: center;
+		border-radius: 5px;
+		&:hover {
+			background-color: $orange;
+			}
+		a {
+			color: $white;
+			}
+			}
+		}
+	}
+	.marker {
+	$marker: 3vw;
+	$markerhalf: ($marker/2);
+	$markerthird: ($marker/3);
+	position: relative;
+	width: 3vw;
+	height: 1.5vw;
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 100%;
+			left: 25%;
+			margin-top: 1vw;
+			border: {
+				color: $orange transparent transparent transparent;
+				width: 10px 10px 10px 10px;
+				style: solid;
+			}
+
+		}
+	}
+
+
+
+ 
+
+	#btn_container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		font-family: serif;
+		font-size: 2.5em;
+		margin: 0;
+		margin-top: 4em;
+	}
+	h3 {
+		font-size: 1.75em;
+		font-weight: 100;
+		margin: 0;
+	}
+
+  .btn {
+  	margin-top: 3.5vw;
+	padding: 18px 20px;
+	background-color: $orange;
+	color: $white;
+	border-radius: 5px; 
+	&:hover {
+		background-color: $black;
+	
+
+		}
+	}
+}
+
+.features {
+	padding: 75px 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+			h2 {
+			color: $orange;
+			font-size: 2.5em;
+			margin-bottom: 5vw;
+
+		}
+		.features-container {
+			display: flex;
+
+		    div {
+			width: 25%;
+			text-align: center;
+		
+			i {
+				font-size: 3em;
+				color: $orange;
+				width: 3em;
+				height: 3em;
+				border: 1px solid $gray;
+				border-radius: 50%;
+				background-color: $lightgray;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0 auto 40px;
+				line-height: 3em;
+			}
+		}
+	}
+}
+.img-section {
+	display: flex;
+	flex-direction: row;
+	color: $black;
+	flex-wrap: wrap;
+	div {
+
+		width: 220px; 
+		height: 220px;
+	    background-color: $gray;
+	    color: $white;
+	    text-align: center;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center; 
+	   
+	    }
+
+	
+	}
+
+	.img-section div:nth-of-type(2){
+		z-index: 0;
+		background-image: url(../img/p1.jpg);
+	}
+	.img-section div:nth-of-type(4){
+		z-index: 0;
+		background-image: url(../img/p2.jpg);
+	} 
+	.img-section div:nth-of-type(6){
+		z-index: 0;
+		background-image: url(../img/p3.jpg);
+	}
+	.img-section div:nth-of-type(7){
+		z-index: 0;
+		background-image: url(../img/p4.jpg);
+	}
+	.img-section div:nth-of-type(9){
+		z-index: 0;
+		background-image: url(../img/p5.jpg);
+	}
+	.img-section div:nth-of-type(11){
+		z-index: 0;
+		background-image: url(../img/p6.jpg);
+	}
+	
+
+.marker-right {
+
+		$marker: 3vw;
+		$markerhalf: ($marker/2);
+		$markerthird: ($marker/3);
+		z-index: 100;
+		position: relative;
+		width: 3vw;
+		height: 1.5vw;
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 100%;
+				left: 25%;
+				margin-top: 1vw;
+				border: {
+					color: $orange transparent transparent transparent;
+					width: 10px 10px 10px 10px;
+					style: solid;
+				}
+
+	}	
+}
+.marker-left {
+
+		$marker: 3vw;
+		$markerhalf: ($marker/2);
+		$markerthird: ($marker/3);
+		z-index: 100;
+		position: relative;
+		width: 3vw;
+		height: 1.5vw;
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 100%;
+				left: 25%;
+				margin-top: 1vw;
+				border: {
+					color: $orange transparent transparent transparent;
+					width: 10px 10px 10px 10px;
+					style: solid;
+				}
+
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+

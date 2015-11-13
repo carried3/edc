@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+html, body {
+  height: 100%;
+}
+
+main {
+  background-color: whitesmoke;
+  height: inherit;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main div:first-child {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #c4c4c4;
+  border-radius: 0.625vw;
+  padding: 1.25vw;
+  margin: 5vw;
+  border: 2px solid #575757;
+}
+main div:first-child span {
+  width: 5vw;
+  height: 5vw;
+  display: block;
+  background-color: #dbc900;
+  border-radius: 100%;
+  border: inherit;
+  margin: 1.25vw;
+}
+main div:first-child span:first-child {
+  background-color: #db0000;
+}
+main div:first-child span:first-child.lit, main div:first-child span:first-child:hover {
+  background-color: #ff4242;
+}
+main div:first-child span:last-child {
+  background-color: #49db00;
+}
+main div:first-child span:last-child.lit, main div:first-child span:last-child:hover {
+  background-color: #81ff42;
+}
+main div:first-child span.lit, main div:first-child span:hover {
+  background-color: #ffef42;
+  cursor: pointer;
+}
+main div:last-child {
+  width: 12vw;
+  height: 26.66664vw;
+  margin: 5vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation-name: walk;
+          animation-name: walk;
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes walk {
+  11.11111% {
+    background-image: url("../img/walk1.gif");
+  }
+  22.22222% {
+    background-image: url("../img/walk2.gif");
+  }
+  33.33333% {
+    background-image: url("../img/walk3.gif");
+  }
+  44.44444% {
+    background-image: url("../img/walk4.gif");
+  }
+  55.55556% {
+    background-image: url("../img/walk5.gif");
+  }
+  66.66667% {
+    background-image: url("../img/walk6.gif");
+  }
+  77.77778% {
+    background-image: url("../img/walk7.gif");
+  }
+  88.88889% {
+    background-image: url("../img/walk8.gif");
+  }
+  100% {
+    background-image: url("../img/walk9.gif");
+  }
+}
+
+@keyframes walk {
+  11.11111% {
+    background-image: url("../img/walk1.gif");
+  }
+  22.22222% {
+    background-image: url("../img/walk2.gif");
+  }
+  33.33333% {
+    background-image: url("../img/walk3.gif");
+  }
+  44.44444% {
+    background-image: url("../img/walk4.gif");
+  }
+  55.55556% {
+    background-image: url("../img/walk5.gif");
+  }
+  66.66667% {
+    background-image: url("../img/walk6.gif");
+  }
+  77.77778% {
+    background-image: url("../img/walk7.gif");
+  }
+  88.88889% {
+    background-image: url("../img/walk8.gif");
+  }
+  100% {
+    background-image: url("../img/walk9.gif");
+  }
+}

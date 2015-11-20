@@ -1,0 +1,11 @@
+{
+  "name": "oct.13-lawncare",
+  "version": "1.0.0",
+  "description": "All files exceept package.json included in template.\r Follow all instructions for new projects:",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

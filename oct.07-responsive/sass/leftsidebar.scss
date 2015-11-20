@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+
+
+$darkgray: hsla(222, 10%, 33%, 1);
+$midgray: lighten($darkgray, 10);
+$lightgray: lighten($darkgray, 50);
+$keycolor: hsla(161, 100%, 35%, 1);
+$darkblue: hsla(209, 53%, 52%, 1);
+$lightblue: lighten($darkblue, 10);
+$white: hsla(0, 0%, 100%, 1);
+$black: hsla(223, 13%, 27%, 1);
+
+
+%clearfix {
+	&::before, &::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+/*global styles start*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	background-color: $lightgray;
+
+}
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+}
+h1 {
+	margin: 0;
+	font-weight: 300;
+}
+h3 {
+	display: inline-block;
+	margin-left: 10px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.btn  {
+	display: inline-block;
+	padding: 5px 25px;
+	border-radius: 5px;
+	font-weight: 700;
+	&.btn-info {
+		color: $midgray;
+		background-color: $white;
+		border: 1px solid $midgray;
+	}
+	&.btn-sign-up {
+		color: $white;
+		background-color: $darkgray;
+	}
+}
+/*global styles end*/
+/*header styles start*/
+header { 
+	background-color: $white;
+	color: $midgray;
+	nav {
+		margin-bottom: 100px;
+		@extend %clearfix;
+		h1{
+			float: left;
+			line-height: 2em;
+		}
+		ul {
+			float: right;
+		}
+		li {
+			display: inline-block;
+			line-height: 3em;
+			a {
+				color: transparentize($midgray, .5);
+				transition: color 200ms ease-in-out;
+				&:hover{
+					color: $keycolor;
+				}
+			}
+		}
+	}
+
+}
+/*header styles end*/
+#box {
+	background-color: $white;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    padding: 3em 2em 1em 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    h2 {
+    	text-align: center;
+    	color: $midgray;
+    }
+    p {
+    	text-align: center;
+    	color: transparentize($midgray, .5);
+
+    }
+    img {
+    	border-radius: 8px;
+    	display: block;
+    	width: 100%;
+    	height: 75%;
+
+    }
+    h3 {
+
+    	color: $midgray;
+    }
+    ul {
+    	line-height: 2em;
+    	list-style: circle;
+    	color: transparentize($midgray, .5);
+    }
+  
+}
+@media screen and (min-width: 960px) {
+	#box {
+		
+		img {
+			width: 50%;
+			float: right;
+		
+		}
+		
+		.img2 {
+			height: 95px;
+			float: left;
+			width: 200px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Footer style start*/
+footer {
+	background-color: $darkgray;
+	color: $white;
+	padding: 75px 0;
+	div {
+		width: 30%;
+		float: left;
+		margin: 0 5% 75px 0;
+		&:last-of-type {
+			margin-right: 0;
+
+		}
+	}
+	> p {
+		width: 100%;
+		clear: both;
+		margin: 50px 0;
+	}
+}
+@media screen and (max-width: 766px) {
+	footer{
+		div {
+			width: 100%;
+			float: none;
+		}
+	}
+}
+/*footer style end*/

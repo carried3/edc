@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+
+}
+.top{
+	background-color: hsl(168, 76%, 36%);
+	display: block;
+	height: 100px;
+}
+.firstul {
+	margin: 0;
+    padding: 0px 0px 0px 0px;
+    line-height: normal;
+    text-align: center;
+    list-style: none;
+}
+.li1 {
+	display: inline-block;
+	text-align: center;
+}
+.a {
+	display: block;
+    letter-spacing: 1px;
+    padding: 0px 40px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 100px;
+    border: none;
+    color: hsl(0, 100%, 100%);
+}
+.wrap{
+	background-color: hsl(0, 0%, 20%);
+	background-size: 100%;
+	display: block;
+	padding: 96px 0px 32px 0px;
+	height: 150px;
+}
+h1 {
+	text-transform: uppercase;
+	color: white;
+	font-size: 48px;
+	font-weight: 400px;
+	text-align: center;
+}
+img {
+	display: block;
+    height: 500px;
+   
+}
+.title {
+	color: white;
+	text-align: center;
+	line-height: 100%;
+}
+.words {
+	display: block;
+	margin: 40px;
+	padding: 10px;
+	margin-top: 0px;
+	font-size: 15px;
+	width: 60%;
+	line-height: 190%;
+	
+}
+h2 {
+	color: hsl(168, 76%, 36%);
+
+}
+.firstli {
+	color: black;
+	text-decoration: none;
+	
+}
+
+ul {
+	list-style: none;
+	display: block;
+	
+
+}
+h3 {
+	margin-left: 30px; 
+	padding: 10px;
+	
+}
+.sec1{
+	width: 60%;
+	float: left;
+
+}
+.sec2{
+width: 40%;
+float: left;
+
+
+
+}
+
+.h3{
+	color: hsl(168, 76%, 36%);
+}
+.style2 li {
+	border-top: 1px solid gray;
+	padding: 12px 0;
+	list-style: none;
+}
+div{
+	/*width: 30%;*/
+}

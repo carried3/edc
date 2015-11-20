@@ -1,0 +1,144 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+%clearfix{
+	&::before, &::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+header {
+	background-color: black;
+	nav {
+		color: white;
+		h1 {
+			font-size: 2em;
+			padding: 0 10px;
+		}
+	}
+	ul {
+		display: flex;
+		align-items: flex-end;
+		justify-content:flex-end;
+	li {
+		padding: 10px 20px;
+		a {
+			color: white;
+		}
+		}
+	}
+}
+.back-img {
+	background-image: url("../img/guardians.jpg");
+	background-size: cover;
+	height: 1000px;
+}
+.characters {
+	display: flex;
+	flex-wrap: wrap;
+	section {
+		@extend %clearfix;
+		width: 50%;
+		img {
+			width: 50%;
+			height: auto;
+			float: right;
+			padding-top: 20px;
+		}
+	}
+	h1 {
+		padding: 0 10px;
+	}
+	p {
+		padding: 0 10px;
+		// float: left;
+	}
+	hr {
+		width: 75%;
+
+	}
+}
+.sec2 {
+	display: flex;
+	// flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+}
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+
+}
+
+@media screen and (max-width: 48em) {
+	.back-img {
+		height: 400px;
+	}
+	
+	.characters	section {
+			width: 33%;
+		
+	}
+}
+@media screen and (max-width: 34em) {
+
+	.back-img {
+		height: 300px;
+	}
+	.characters {
+		display: block;
+		section {
+			width: 100%;
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+/* matts start example*/
+
+// nav {
+// 	display: flex;
+// 	h1 {
+// 		margin-right: auto;
+// 	}
+// 	ul {
+// 		display: inline-flex;
+	
+// 	a {
+// 		padding: 0 10px;
+// 		}
+// 	}
+// }
+// main, #list {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// }
+// section {
+// 	box-sizing: border-box;
+// 	padding: 20px;
+// 	width: 50%;
+// 	img {
+// 		float: left;
+// 		width: 25%;
+// 		height: auto;
+// 	}
+// }
+
+
+
+
+
+
+/*matts end example*/

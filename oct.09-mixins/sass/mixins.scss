@@ -1,0 +1,50 @@
+/* sass goes here */
+$unit: 25px;
+$purple: hsla(276, 100%, 50%, 1);
+$num: 20em;
+$str: "text";
+$width: 20vw;
+
+
+
+@debug comparable($unit, $num);
+
+
+$hue: 300;
+$sat: 60%;
+$lum: 40%;
+$text: darken($purple, 30);
+
+
+// @debug $purple;
+// @debug $num;
+// @debug $unit + 200;
+
+%clearfix {
+	&::before, &::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+
+
+
+
+@mixin theme($bgc, $tc, $fs){
+	background-color: $bgc;
+	color: $tc;
+	@if (unit($fs) == "px") {
+		font-size: $fs; 
+	}
+	@else{
+		@warn "this value needs to be a px value";
+    }
+}
+
+body {
+
+		@include theme(purple, black, $unit);
+	}
+ 

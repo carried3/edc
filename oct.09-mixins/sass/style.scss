@@ -1,0 +1,147 @@
+@import "fontawesome";
+@import "reset";
+@import "variables";
+@import "logic";
+
+@mixin size ($x){
+	line-height: $x;
+	font-size: 1.5vw;
+}
+
+body {
+	background-color: hsla(0, 0%, 95%, 1);
+}
+main {
+	width: 50%;
+	height: 35vw;
+	background-color: $varblack;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	background: {
+		image: url('../img/banner.jpg');
+		size: cover;
+		position: center;
+		repeat: no-repeat;
+	}
+	border: 1px solid white;
+	box-shadow: -5px 5px 20px 0 transparentize(black, .5);
+}
+
+span {
+	&::before, &::after {
+		display: inline-block;
+		font: normal normal normal 14px/1 fontAwesome;
+		font-size: inherit;
+		text-rendering:auto;
+		-webkit-font-smoothing:antialiased;
+		-moz-osx-font-smoothing:grayscale;
+	}
+}
+
+#top-header,
+#bottom-header {
+	background-color: white;
+	@extend %clearfix;
+
+}
+.ot-btns {
+	float: left;
+	span {
+		color: yellow;
+		@include size (1vw);
+		width: 1vw;
+		@include size (1vw);
+		&::before {
+			content: "\f111";
+		}
+		&:first-child {
+			color: red;
+		}
+		&:last-child {
+			color: green;
+		}
+	}
+
+}
+.user {
+	$user-btn: 3vw;
+	border: 1px solid black;
+	// width: $user-btn;
+	// height: ($user-btn/2);
+	float: right;
+	@include size (1.5vw);
+	font-family: sans-serif;
+	padding: .4vw;
+	border-radius: 4px;
+	display: inline-block;
+}
+header hr {
+	margin: 0;
+	border-width: 0 0 1px 0;
+}
+#bottm-header {
+
+}
+.nav-btn {
+	float: left;
+	span {
+		@include size (1.5vw);
+		@include size ($x);
+	}
+	span::before {
+		content: "\f060";
+	}
+	span::after {
+		content: "\f061";
+	}
+}
+.refresh {
+	float: left;
+	span {
+		@include size (1.5vw);
+		@include size ($x);
+	}
+	span::before {
+		content: "\f021";
+	}
+	span:hover::before {
+		content: "\f00d";
+	}
+}
+.addr {
+	float: left;
+	line-height: 3vw;
+	font-size: 2vw;
+	
+}
+.settings {
+	float: left;
+	span {
+		@include size (1.5vw);
+		@include size ($x);
+	}
+	span::before {
+		content: "\f0c9";
+	}
+}
+/*
+orientation button:
+close
+minimize
+maximize
+
+
+address bar
+
+
+refresh button/stop button(hoover)
+foward and back button
+
+
+
+
+
+
+*/

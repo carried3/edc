@@ -1,0 +1,82 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/* sass goes here */
+
+
+header {
+	background-image: url("../img/header_bg.jpg");
+	height: 900px;
+	.nav{
+		display: flex;
+		background-color: $white;
+
+		.logo {
+			flex: 2;
+			a {
+			    background: url(../img/logo.png);
+				width: 152px;
+				height: 2.99vw;
+			    text-indent: 100%;
+ 				white-space: nowrap;
+  				overflow: hidden;
+  				display: block;
+  				background-repeat: no-repeat;
+  				}
+
+			}
+	 nav{
+		
+		ul{
+			display: inline-flex;
+		}
+		a {
+			color: $gray;
+
+			}
+	 	}
+	 	li {
+	 		padding: 0 30px;
+	 	}
+	}
+
+	.sec1 {
+		text-align: center;
+		padding-top: 25vw;
+		font-family: 'Montserrat', sans-serif;
+
+		h2 {
+			font-size: 3em;
+
+		}
+		.ico {
+			padding-top: 30vw;
+		}
+	
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

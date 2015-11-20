@@ -1,0 +1,58 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+html {
+	height: 100%;
+}
+body {
+	background-color: purple;
+	height: 100%;
+}
+div {
+	border: 1px solid;
+	width: 50px;
+	// height: 50px;
+	background-color: blue;
+	&:first-child{
+		background-color: purple;
+	}
+	&:last-child{
+		background-color: yellow;
+	}
+}
+main {
+	background-color: hsla(0, 40%, 90%, 1);
+	height: 100%;
+	display: flex;
+	// justify-content: flex-end;
+	align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	// align-content: stretch;
+	
+	div:first-child {
+		// flex: 3;
+	}
+	div:last-child {
+		// flex: 3;
+		}
+	
+	div:nth-child(2) {
+		background-color: orange;
+		// flex: 3;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

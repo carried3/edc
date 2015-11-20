@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	background-color: hsla(0, 0%, 0%, .25);
+}
+div{
+	background-color: hsla(0, 0%, 100%, 1);
+	width: 50vw;
+	height: 50vw;
+	margin: 50px auto;
+	position: relative;
+
+}
+/*CLEARFIX-clears float*/
+div::after {
+	content: "";
+	display: block;
+	/*background-color: red;
+	height: 1px;*/
+	clear: both;
+
+}
+ img {
+ 	width: 25%;
+ 	height: auto;
+ 	/*float: right;*/
+ 	position: absolute;
+ 	/*left: 0;
+ 	top: 0;*/
+
+
+}
+#catdice1-1 {
+	top: 35%;
+	left: 38%;
+}
+#catdice2-1 {
+	bottom: 0;
+	right: 0;
+}
+#catdice3-1 {
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#catdice3-2 {
+	top: 0;
+}
+#catdice3-3 {
+	left: 35%;
+	top: 38%;
+}
+
+#catdice4-1 {
+	top: 0;
+	left: 0;
+}
+#catdice4-2{
+	top: 35%;
+	left: 38%;
+}
+#catdice4-3 {
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+#catdice4-4 {
+	
+}
+#catdice5-1 {
+	top: 35%;
+	left: 38%;
+
+}

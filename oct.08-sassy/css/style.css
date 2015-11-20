@@ -1,0 +1,57 @@
+/* sass goes here */
+main div {
+  width: 100px;
+  height: 100px;
+}
+main div:nth-of-type(1) {
+  background-color: #bf4040;
+  border-width: 10px;
+  border-style: dotted;
+  border-color: #9540bf;
+  padding: 10px 50px 50px 50px;
+  color: #9540bf;
+  text-shadow: 1px 1xp 0 #3c1a4d;
+}
+main div:nth-of-type(1)::before {
+  content: "48deg";
+}
+
+main div:nth-of-type(2) {
+  background-color: #d9b98c;
+  border-width: 10px;
+  border-style: groove;
+  border-color: #bf6a40;
+  padding: 10px 50px 50px 50px;
+  color: #bf6a40;
+  text-shadow: 1px 1xp 0 #4c2a1a;
+}
+
+main div:nth-of-type(3) {
+  background-color: #999933;
+  border-width: 10px;
+  border-style: ridge;
+  border-color: #999933;
+  padding: 10px 50px 50px 50px;
+  color: #999933;
+  text-shadow: 1px 1xp 0 #26260d;
+}
+
+main div:nth-of-type(4) {
+  background-color: #9540bf;
+  border-width: 10px;
+  border-style: outset;
+  border-color: #bf4040;
+  padding: 10px 50px 50px 50px;
+  color: #bf4040;
+  text-shadow: 1px 1xp 0 #4d1a1a;
+}
+
+main div:last-of-type {
+  background-color: #bf6a40;
+  border-width: 10px;
+  border-style: inset;
+  border-color: #bf6a40;
+  padding: 10px 50px 50px 50px;
+  color: #bf6a40;
+  text-shadow: 1px 1xp 0 #4c2a1a;
+}

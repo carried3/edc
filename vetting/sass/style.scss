@@ -1,0 +1,50 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+html, body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+	
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	h1 {
+		font-size: 4em;
+
+	}
+}
+button {
+		padding: 30px 50px;
+		font-size: 1.5em;
+		border-radius: 5px;
+		margin-top: 20px;
+	}
+
+
+.cta {
+	height: 35vw;
+	width: 100%;
+	background: {
+		image: url('http://unsplash.it/350x150');
+		size: cover;
+		position: center;
+	}
+}
+footer {
+	background-color: darkgray;
+	color: white;
+}
+
+
+
+
+
+

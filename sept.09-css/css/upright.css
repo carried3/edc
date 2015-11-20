@@ -1,0 +1,38 @@
+body{
+	font-family:'Open Sans', sans-serif; 
+
+
+}
+header {
+	
+	position: relative;
+    margin-bottom: 3em;
+    height: 13em;
+    border-bottom: 1px solid #dbdbdb
+}
+h1 {
+	color: #404040;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36.6667px;
+	font-weight: 900;
+	
+}
+ul li{
+	display: inline;
+	cursor: auto;
+	float: right;
+
+}
+h2 {
+	text-align: center;
+	padding-left: 10px;
+}
+p {
+	text-align: center;
+}
+
+image {
+	width: 100%
+}
+
+

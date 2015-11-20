@@ -1,0 +1,69 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+
+/* sass goes here */
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+main, header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	> button {
+		border: 1px solid gray;
+		border-radius: 2px; 
+		background-color: hsla(200, 30%, 70%, 1);
+		border-color: darken(hsla(200, 30%, 70%, 1),10);
+		color: white;
+		cursor: pointer;
+	}
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-weight: 200;
+		font-size: 1.25em;
+		line-height: 1.25;
+		border: 1px solid gray;
+		border-radius: 2px; 
+	}	 
+		input, button {
+			line-height: inherit;
+			font-weight: inherit;
+			font-size: inherit;
+			border: inherit;
+			border-radius: inherit;
+			margin: 10px;
+			// color: white;
+		}
+		input:disabled {
+			background-color: darken(white, 5);
+		}
+		input[type="button"] {
+			background-color: hsla(200, 30%, 70%, 1);
+			border-color: darken(hsla(200, 30%, 70%, 1),10);
+			color: white;
+			cursor: pointer;
+			padding: 5px;
+			&:hover {
+				background-color: darken(hsla(200, 30%, 70%, 1),10);
+				border-color: darken(hsla(200, 30%, 70%, 1),20);
+			}
+			&:disabled {
+				background-color: grayscale(hsla(200, 30%, 70%, 1));
+				border-color: grayscale(darken(hsla(200, 30%, 70%, 1),10));
+				cursor: not-allowed;
+			}
+		}
+	
+}
+footer, p {
+	font-size: 1.5em;
+}

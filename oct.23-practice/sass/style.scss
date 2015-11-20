@@ -1,0 +1,118 @@
+@import "variables";
+@import "reset";
+// @import "fontawesome";
+
+/* sass goes here */
+header {
+	height: 500px;
+	background: {
+		image: url("../img/guardians.jpg");
+		position: center;
+		size: cover;
+	}
+	
+nav {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	h1 {
+		margin-bottom: 0;
+		color: white;
+		// padding: 5px 10px;
+	}
+	ul {
+		display: inline-flex;
+		justify-content: space-between;
+		
+			li {
+				padding: 0 10px;
+				a {
+					color: white;
+				}
+			}
+		}
+	}
+}
+main {
+	h1 {
+		text-align: center;
+	}
+
+	.characters {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+		section {
+			width: 33%;
+			background-color: hsla(0, 0%, 0%, .10);
+			text-align: center;
+			box-sizing: border-box;
+			padding: 15px;
+		}
+		.main {
+			width: 100%;
+			span {
+				height: 33vw;
+				float: right;
+	}
+
+		}
+		span {
+			display: block;
+			width: 35%;
+			height: (33vw/3);
+			border-radius: 50%;
+			margin: 0 auto;
+		}
+	}
+}
+
+$chars: bereet carina collector cosmo drax gamora garthan-saal groot howard-the-duck irani-rael korath-thak kraglin-obfonteri nebula peter-quill rhomann-dey rocket-racoon ronan yondu;
+
+@each $char in $chars {
+	$i: index($chars, $char);
+	section:nth-child(#{$i}){
+		span {
+			background-image: url("../img/bio-#{$char}.jpg");
+		}
+	}
+}
+span {
+	background: {
+		position: center;
+		size: cover;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

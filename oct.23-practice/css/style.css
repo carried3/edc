@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+header {
+  height: 500px;
+  background-image: url("../img/guardians.jpg");
+  background-position: center;
+  background-size: cover;
+}
+header nav {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+header nav h1 {
+  margin-bottom: 0;
+  color: white;
+}
+header nav ul {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav ul li {
+  padding: 0 10px;
+}
+header nav ul li a {
+  color: white;
+}
+
+main h1 {
+  text-align: center;
+}
+main .characters {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .characters section {
+  width: 33%;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 15px;
+}
+main .characters .main {
+  width: 100%;
+}
+main .characters .main span {
+  height: 33vw;
+  float: right;
+}
+main .characters span {
+  display: block;
+  width: 35%;
+  height: 11vw;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+section:nth-child(1) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(2) span {
+  background-image: url("../img/bio-carina.jpg");
+}
+
+section:nth-child(3) span {
+  background-image: url("../img/bio-collector.jpg");
+}
+
+section:nth-child(4) span {
+  background-image: url("../img/bio-cosmo.jpg");
+}
+
+section:nth-child(5) span {
+  background-image: url("../img/bio-drax.jpg");
+}
+
+section:nth-child(6) span {
+  background-image: url("../img/bio-gamora.jpg");
+}
+
+section:nth-child(7) span {
+  background-image: url("../img/bio-garthan-saal.jpg");
+}
+
+section:nth-child(8) span {
+  background-image: url("../img/bio-groot.jpg");
+}
+
+section:nth-child(9) span {
+  background-image: url("../img/bio-howard-the-duck.jpg");
+}
+
+section:nth-child(10) span {
+  background-image: url("../img/bio-irani-rael.jpg");
+}
+
+section:nth-child(11) span {
+  background-image: url("../img/bio-korath-thak.jpg");
+}
+
+section:nth-child(12) span {
+  background-image: url("../img/bio-kraglin-obfonteri.jpg");
+}
+
+section:nth-child(13) span {
+  background-image: url("../img/bio-nebula.jpg");
+}
+
+section:nth-child(14) span {
+  background-image: url("../img/bio-peter-quill.jpg");
+}
+
+section:nth-child(15) span {
+  background-image: url("../img/bio-rhomann-dey.jpg");
+}
+
+section:nth-child(16) span {
+  background-image: url("../img/bio-rocket-racoon.jpg");
+}
+
+section:nth-child(17) span {
+  background-image: url("../img/bio-ronan.jpg");
+}
+
+section:nth-child(18) span {
+  background-image: url("../img/bio-yondu.jpg");
+}
+
+span {
+  background-position: center;
+  background-size: cover;
+}

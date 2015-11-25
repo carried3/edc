@@ -1,0 +1,121 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+
+header {
+	background-color: black;
+	
+	h1 {
+		font-size: 2em;
+		padding: 0 10px;
+		color: white;
+	}
+	// ul{
+	// 	display: flex;
+	// 	justify-content: flex-end;
+	// 	align-items: flex-end;
+	// } 
+	ul, li, a {
+		color: white;
+		// padding: 0 5px;
+		display: flex;
+	}
+	a {
+		padding: 10px;
+	}
+	.dropdown {
+		position: relative;
+		form, ul {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+		}
+		&.visible form, &.visible ul {
+			display: block;
+		}
+		
+	}
+}
+.sec1 {
+	height: 30vw;
+	h2 {
+		text-align: center;
+		padding: 5vw 0 0 0;
+		font-size: 4em;
+		margin-bottom: 0;
+		color: white;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+	background:{
+		image: url(../img/pic01.jpg);
+		repeat: no-repeat;
+		size: cover;
+	}
+
+	p {
+		// width: 50%;
+		text-align: center;
+		color: white;
+	}
+}
+.sec2 {
+	text-align: center;
+	h2 {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+		padding: 10px 60px;
+		border: 1px solid black;
+		border-box: box-sizing;
+		margin: 0;
+	}
+	button {
+		margin: 0 auto;
+	}
+}
+main {
+	display: flex;
+	background-color: black;
+	justify-content: space-between;
+
+	div {
+		width: 33.333%;
+		box-sizing: border-box;
+		margin: 10px;
+		text-align: center;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		h3 {
+			color: white;
+			text-align: center;
+		}
+		p {
+			// width: 70%;
+			color: white;
+			// padding-left: 30px;
+			text-align: center;
+		}
+	}
+}
+footer {
+	background:{
+		image: url(../img/pic09.jpg);
+		repeat: no-repeat;
+		size: cover;
+	}
+	height: 5vw;
+	// color: white;
+	h3 {
+		text-align: center;
+	}
+}

@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Domine:400,700);
 body {
   margin: 0;
 }
@@ -11,6 +10,7 @@ ul, ol {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -2558,451 +2558,173 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* sass goes here */
-.fa-diamond {
-  color: #fff;
-  font-size: 3em;
-}
-
-#diamond-contact {
-  color: #333333;
-  font-size: 3em;
-  padding-bottom: 10px;
-}
-
-#diamond-port {
-  color: #333333;
-  font-size: 3em;
-}
-
-.navbar-default {
-  background-color: #333333;
-  margin-bottom: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 20;
-}
-.navbar-default .navbar-brand {
-  color: #fff;
-  font-family: 'Domine', serif;
-  font-size: 2em;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: #fff;
-}
-
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-  color: #5e5e5e;
-  background-color: transparent;
-}
-
 header {
-  padding-top: 250px;
-  background-image: url("../img/diagmonds_@2X.png");
-  height: auto;
-  font-family: 'Montserrat', sans-serif;
+  background-image: url(../img/pics02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-header .head1 {
+header .toggle {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
-  padding: 11vw 5vw;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-header .head1 h2 {
-  color: #fff;
-  font-size: 3.5em;
-  text-align: center;
-}
-header .head1 p {
-  color: #fff;
+header .toggle a, header .toggle i {
+  color: white;
   font-size: 2em;
-  font-family: 'Domine', serif;
-  text-transform: uppercase;
+  padding: 10px;
 }
-
-@media screen and (max-width: 542px) {
-  header {
-    padding-top: 220px;
-  }
-  header .head1 {
-    text-align: center;
-  }
-  header .head1 h2 {
-    font-size: 3em;
-  }
-
-  #portfolio h2 {
-    padding-top: 70px;
-  }
-  #portfolio .chap h5 a {
-    font-size: 1.1em;
-  }
-
-  #about h2 {
-    padding-top: 70px;
-  }
-
-  #contact h2 {
-    padding-top: 70px;
-  }
-
-  .footer-above {
-    font-size: .75em;
-  }
-}
-@media screen and (min-width: 542px) {
-  #portfolio .grand h5 a {
-    font-size: 5px;
-  }
-
-  .chap h5 a {
-    font-size: 1em;
-  }
-}
-#portfolio {
+header .head {
+  height: 36vw;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-#portfolio h2 {
-  font-size: 3em;
-  color: #333333;
-  margin-bottom: 0;
-  text-align: center;
-}
-#portfolio .work {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5px 10px;
-}
-#portfolio .grand {
-  background-image: url("../img/logo.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 25px;
-  font-family: 'Domine', serif;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 25vw;
-  width: 25vw;
-  text-align: center;
-  margin-left: 10px;
-  border: 3px solid #333333;
-  position: relative;
+  color: white;
 }
-#portfolio .grand:hover a {
-  color: #fff;
+header .head h1 {
+  color: white;
+  font-size: 10em;
+  margin: 0;
 }
-#portfolio .grand:hover div {
-  opacity: 1;
-}
-#portfolio .grand div {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(51, 51, 51, 0.75);
-  opacity: 0;
-  border-radius: 25px;
-  transition: all 300ms ease-in-out;
-  z-index: 5;
-}
-#portfolio .grand h5 {
-  text-align: center;
-  position: relative;
-  z-index: 10;
-}
-#portfolio .grand h5 a {
+header .head p {
   font-size: 1.5em;
-  color: black;
-  text-decoration: none;
 }
-
-.barbed {
-  background-image: url("../img/banner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 25px;
-  font-family: 'Domine', serif;
-  height: 25vw;
-  width: 25vw;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-.barbed:hover a {
-  color: #fff;
-}
-.barbed:hover div {
-  opacity: 1;
-}
-.barbed div {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(51, 51, 51, 0.75);
-  opacity: 0;
-  border-radius: 25px;
-  transition: all 300ms ease-in-out;
-  z-index: 5;
-}
-.barbed h5 {
-  text-align: center;
-  position: relative;
-  z-index: 10;
-}
-.barbed h5 a {
-  font-size: 1.5em;
-  color: #fff;
-  text-decoration: none;
-}
-
-.chap {
-  background-image: url("../img/jamies-hero.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 25px;
-  font-family: 'Domine', serif;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 25vw;
-  width: 25vw;
-  text-align: center;
-  margin-left: 10px;
-  border: 3px solid #333333;
-  position: relative;
-}
-.chap:hover a {
-  color: #fff;
-}
-.chap:hover div {
-  opacity: 1;
-}
-.chap div {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(51, 51, 51, 0.75);
-  opacity: 0;
-  border-radius: 25px;
-  transition: all 300ms ease-in-out;
-  z-index: 5;
-}
-.chap h5 {
-  text-align: center;
-  position: relative;
-  z-index: 10;
-}
-.chap h5 a {
-  font-size: 1.5em;
-  color: black;
-  text-decoration: none;
-}
-
-#about {
-  background-image: url("../img/diagmonds_@2X.png");
-  height: auto;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#about .about {
-  color: #fff;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#about .about h2 {
-  font-size: 3em;
-  margin-bottom: 0;
-}
-#about .about img {
-  width: 20%;
-  border-radius: 20px;
-  float: left;
-}
-#about .about p {
-  text-align: center;
-  padding: 10px 30px;
-}
-
-#contact .contact h2 {
-  font-size: 3em;
-  text-align: center;
-  color: #333333;
-  margin-bottom: 0;
-}
-#contact .contact div {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
-  margin: 0 auto;
-}
-#contact .contact div input {
-  width: 95%;
-  padding: 20px;
+header .head a {
+  padding: 10px 50px;
+  border: 1px solid gray;
   border-radius: 5px;
+  background-color: #5c000f;
 }
-#contact .contact div textarea {
-  border-radius: 5px;
+
+.nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #5c000f;
+  color: white;
+  height: 5vw;
+}
+.nav ul.changecolor {
+  background-color: #008f6d;
+}
+.nav ul li {
+  padding: 20px 60px;
+}
+.nav ul li:hover {
+  background-color: white;
+  color: #5c000f;
+}
+.nav ul li a {
+  font-size: 1.5em;
+}
+
+main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+}
+main div {
+  width: 33.333%;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 10px;
+}
+main div img {
   width: 100%;
-  border: 2px solid #9e9e9e;
+  height: auto;
 }
-#contact .contact div .btn {
-  margin-top: 15px;
-  border: solid 2px #333333;
-  font-size: 20px;
-  color: #fff;
-  background-image: url("../img/diagmonds.png");
-  padding: 10px 40px;
+main button {
+  background-color: #5c000f;
+  color: white;
+  padding: 10px 30px;
   border-radius: 5px;
-  transition: all .3s ease-in-out;
-  margin-bottom: 10px;
 }
-#contact .contact div .btn:hover {
-  border: solid 2px #333333;
-  color: #333333;
-  background: #fff;
+
+.img {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 39vw;
+  background-image: url(../img/pics01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img h1 {
+  color: white;
+  font-size: 10em;
+}
+
+section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+}
+section div {
+  width: 33.333%;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 10px;
+}
+section div i {
+  font-size: 3em;
+}
+section button {
+  background-color: #5c000f;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
 }
 
 footer {
-  color: #fff;
-  background-color: #333333;
-}
-footer h3 {
-  margin-bottom: 30px;
-}
-
-.foot-container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.foot-container footer .footer-column {
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-.foot-container .foot-li {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .footer-below {
-  padding: 25px 0;
-  background-image: url("../img/diagmonds.png");
+  background-color: #5c000f;
   text-align: center;
+  color: white;
+  font-size: 1.25em;
 }
 
-.social-btn {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #fff;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 20px;
-  line-height: 45px;
-  color: #fff;
+.lightcolor {
+  background-color: #008f6d;
 }
 
-.btn:focus,
-.btn:active,
-.btn.active {
-  outline: 0;
+.lighthdr {
+  background-image: url(https://unsplash.it/640/425?image=400);
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
 }

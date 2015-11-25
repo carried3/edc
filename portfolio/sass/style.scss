@@ -16,6 +16,7 @@ body {
 .fa-diamond {
   color: $white;
   font-size: 3em;
+
 }
 
 #diamond-contact {
@@ -48,9 +49,6 @@ body {
     color: hsla(0, 0%, 37%, 1);
     background-color: transparent;
 }
-
-
-
 header {
 	padding-top: 250px;
 	background: {
@@ -69,6 +67,7 @@ header {
 			color: $white;
 			font-size: 3.5em;
 			text-align: center;
+
 		}
 		p {
 			color: $white;
@@ -90,7 +89,7 @@ header {
 	}
 	#portfolio{
 		h2 {
-		padding-top: 60px;
+		padding-top: 70px;
 		}
 		.chap h5 a {
 			font-size: 1.1em;

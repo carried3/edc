@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 100%;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+#cal {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 40px auto 0;
+  padding: 20px;
+}
+#cal button {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  padding: 0;
+  margin: 0;
+  width: 35px;
+  height: 35px;
+}
+#cal .daysOfWeek span {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  font-size: 75%;
+  opacity: .5;
+  line-height: 1.5;
+}
+#cal .days {
+  width: 350px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: black;
+}
+#cal .days div:nth-child(7n),
+#cal .days div:nth-child(7n + 1) {
+  color: red;
+}
+#cal .days div {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: black;
+}
+#cal .days div.today {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.65);
+}

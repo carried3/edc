@@ -16,6 +16,7 @@ body {
 .fa-diamond {
   color: $white;
   font-size: 3em;
+  
 
 }
 
@@ -128,7 +129,7 @@ header {
 			display: flex;
 			padding: 5px 10px;
 
-		}
+		
 		.grand {
 			background:{
 				image: url("../img/logo.png");
@@ -141,8 +142,8 @@ header {
 			display: inline-flex;
 			justify-content: center;
 			align-items: center;
-			height: 25vw;
-			width: 25vw;
+			height: 10vw;
+			width: 10vw;
 			text-align: center;
 			margin-left: 10px;
 			border: 3px solid $darkgray;
@@ -188,8 +189,8 @@ header {
 			}
 			border-radius: 25px;
 			font-family: 'Domine', serif;
-			height: 25vw;
-			width: 25vw;
+			height: 10vw;
+			width: 10vw;
 			display: inline-flex;
 			justify-content: center;
 			align-items: center;
@@ -238,8 +239,58 @@ header {
 			display: inline-flex;
 			justify-content: center;
 			align-items: center;
-			height: 25vw;
-			width: 25vw;
+			height: 10vw;
+			width: 10vw;
+			text-align: center;
+			margin-left: 10px;
+			border: 3px solid $darkgray;
+			position: relative;
+			&:hover {
+				a {
+					color: $white;
+				}
+				div {
+					opacity: 1;
+				}
+			}
+			div{
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				background-color: transparentize($darkgray, .25);
+				opacity: 0;
+				border-radius: 25px;
+				transition: all 300ms ease-in-out;
+				z-index: 5;
+			}
+		
+			h5 {
+				text-align: center;
+				position: relative;
+				z-index: 10;
+				a {
+					font-size: 1.5em;
+					color: black;
+				}	text-decoration: none;
+			}
+		}
+		.scrolling {
+			background: {
+				image: url("../img/Tongue and Lip.jpg");
+				size: cover;
+				repeat: no-repeat;
+				position: center; 
+			}
+			display: inline-flex;
+			height: 10vw;
+			width: 10vw;
+			border-radius: 25px;
+			font-family: 'Domine', serif;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
 			text-align: center;
 			margin-left: 10px;
 			border: 3px solid $darkgray;
@@ -275,7 +326,58 @@ header {
 					text-decoration: none;
 			}
 		}
-}
+		.keyframes{
+			background: {
+				image: url("../img/yTkgdKEGc.png");
+				size: cover;
+				repeat: no-repeat;
+				position: center; 
+			}
+			height: 10vw;
+			width: 10vw;
+	// 		height: 10vw;
+	// 		width: 10vw;
+	// 		border-radius: 25px;
+	// 		font-family: 'Domine', serif;
+	// 		display: inline-flex;
+	// 		justify-content: center;
+	// 		align-items: center;
+	// 		text-align: center;
+	// 		margin-left: 10px;
+	// 		border: 3px solid $darkgray;
+	// 		position: relative;
+	// 		&:hover {
+	// 			a {
+	// 				color: $white;
+	// 			}
+	// 			div {
+	// 				opacity: 1;
+	// 			}
+	// 		}
+	// 		div{
+	// 			position: absolute;
+	// 			left: 0;
+	// 			top: 0;
+	// 			right: 0;
+	// 			bottom: 0;
+	// 			background-color: transparentize($darkgray, .25);
+	// 			opacity: 0;
+	// 			border-radius: 25px;
+	// 			transition: all 300ms ease-in-out;
+	// 			z-index: 5;
+	// 		}
+		
+	// 		h5 {
+	// 			text-align: center;
+	// 			position: relative;
+	// 			z-index: 10;
+	// 			a {
+	// 				font-size: 1.5em;
+	// 				color: black;
+	// 			}	text-decoration: none;
+	// 		}
+	}	}
+}			
 #about {
 	background-image: url("../img/diagmonds_@2X.png");
 	height: auto;
@@ -303,6 +405,7 @@ header {
 		p {
 			text-align: center;
 			padding: 10px 30px;
+			font-size: 1.5em;
 		}
 	}
 }

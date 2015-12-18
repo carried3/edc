@@ -1,0 +1,54 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+
+
+
+
+
+$litepurp: hsla(306, 38%, 35%, 1); 
+$darkpurp: hsla(244, 23%, 36%, 1);
+$green: hsla(164, 100%, 37%, 1);
+$white: hsla(0, 0%, 100%, 1);
+$gray: hsla(0, 0%, 67%, .96);
+
+header{
+	background-color: $litepurp;
+	background-image: url(../img/overlay.png);
+	display: flex;
+	color: $white;
+	h1 {
+		flex-direction: start;
+		padding: 100px 50px 75px 50px; 
+
+	}
+	hr {
+		color: $gray;
+		
+
+	}
+	p {
+		color: $gray;
+		font-size: 1.3em;
+		padding: 100px 50px 75px 50px;
+	}
+	a {
+		text-decoration: none;
+		background-color: $green;
+		padding: 10px 20px;
+		border-radius: 20px;
+		margin-left: 50px;
+
+	}
+}
+.first {
+	// display: flex;
+	h2 {
+		// flex-direction: start;
+		// padding: 100px 50px 75px 50px;
+	}
+	p {
+
+	}
+}

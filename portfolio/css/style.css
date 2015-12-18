@@ -2695,7 +2695,7 @@ header .head1 p {
   display: flex;
   padding: 5px 10px;
 }
-#portfolio .grand {
+#portfolio .work .grand {
   background-image: url("../img/logo.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -2711,20 +2711,20 @@ header .head1 p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 25vw;
-  width: 25vw;
+  height: 10vw;
+  width: 10vw;
   text-align: center;
   margin-left: 10px;
   border: 3px solid #333333;
   position: relative;
 }
-#portfolio .grand:hover a {
+#portfolio .work .grand:hover a {
   color: #fff;
 }
-#portfolio .grand:hover div {
+#portfolio .work .grand:hover div {
   opacity: 1;
 }
-#portfolio .grand div {
+#portfolio .work .grand div {
   position: absolute;
   left: 0;
   top: 0;
@@ -2736,26 +2736,25 @@ header .head1 p {
   transition: all 300ms ease-in-out;
   z-index: 5;
 }
-#portfolio .grand h5 {
+#portfolio .work .grand h5 {
   text-align: center;
   position: relative;
   z-index: 10;
 }
-#portfolio .grand h5 a {
+#portfolio .work .grand h5 a {
   font-size: 1.5em;
   color: black;
   text-decoration: none;
 }
-
-.barbed {
+#portfolio .barbed {
   background-image: url("../img/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 25px;
   font-family: 'Domine', serif;
-  height: 25vw;
-  width: 25vw;
+  height: 10vw;
+  width: 10vw;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2767,13 +2766,13 @@ header .head1 p {
           align-items: center;
   position: relative;
 }
-.barbed:hover a {
+#portfolio .barbed:hover a {
   color: #fff;
 }
-.barbed:hover div {
+#portfolio .barbed:hover div {
   opacity: 1;
 }
-.barbed div {
+#portfolio .barbed div {
   position: absolute;
   left: 0;
   top: 0;
@@ -2785,18 +2784,17 @@ header .head1 p {
   transition: all 300ms ease-in-out;
   z-index: 5;
 }
-.barbed h5 {
+#portfolio .barbed h5 {
   text-align: center;
   position: relative;
   z-index: 10;
 }
-.barbed h5 a {
+#portfolio .barbed h5 a {
   font-size: 1.5em;
   color: #fff;
   text-decoration: none;
 }
-
-.chap {
+#portfolio .chap {
   background-image: url("../img/jamies-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -2812,20 +2810,20 @@ header .head1 p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 25vw;
-  width: 25vw;
+  height: 10vw;
+  width: 10vw;
   text-align: center;
   margin-left: 10px;
   border: 3px solid #333333;
   position: relative;
 }
-.chap:hover a {
+#portfolio .chap:hover a {
   color: #fff;
 }
-.chap:hover div {
+#portfolio .chap:hover div {
   opacity: 1;
 }
-.chap div {
+#portfolio .chap div {
   position: absolute;
   left: 0;
   top: 0;
@@ -2837,15 +2835,75 @@ header .head1 p {
   transition: all 300ms ease-in-out;
   z-index: 5;
 }
-.chap h5 {
+#portfolio .chap h5 {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  text-decoration: none;
+}
+#portfolio .chap h5 a {
+  font-size: 1.5em;
+  color: black;
+}
+#portfolio .scrolling {
+  background-image: url("../img/Tongue and Lip.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 25px;
+  font-family: 'Domine', serif;
+  display: inline-flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  border: 3px solid #333333;
+  position: relative;
+}
+#portfolio .scrolling:hover a {
+  color: #fff;
+}
+#portfolio .scrolling:hover div {
+  opacity: 1;
+}
+#portfolio .scrolling div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(51, 51, 51, 0.75);
+  opacity: 0;
+  border-radius: 25px;
+  transition: all 300ms ease-in-out;
+  z-index: 5;
+}
+#portfolio .scrolling h5 {
   text-align: center;
   position: relative;
   z-index: 10;
 }
-.chap h5 a {
+#portfolio .scrolling h5 a {
   font-size: 1.5em;
   color: black;
   text-decoration: none;
+}
+#portfolio .scrolling .keyframes {
+  background-image: url("../img/yTkgdKEGc.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 10vw;
+  width: 10vw;
 }
 
 #about {
@@ -2891,6 +2949,7 @@ header .head1 p {
 #about .about p {
   text-align: center;
   padding: 10px 30px;
+  font-size: 1.5em;
 }
 
 #contact .contact h2 {

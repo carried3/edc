@@ -1,0 +1,94 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+header {
+	text-align: center;
+	font-size: 1.5em;
+	nav{
+		background: green;
+		ul{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			li, a {
+				padding: 10px;
+				color: white;
+				&:hover {
+					color: red;
+				}
+			}
+		}
+	}
+}
+main {
+	text-align: center;
+	padding: 20px;
+	h1{
+		text-align: center;
+	}
+}
+section {
+	text-align: center;
+	padding: 20px;
+}
+.smi {
+	li {
+		display: inline-block;
+		margin-right: 5px;
+		i {
+			width: 25px;
+			height: 25px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 100%;
+			color: white;
+		}
+		i.fa-facebook {
+			background-color: #3b5998;
+		}
+		i.fa-twitter {
+			background-color: #55acee;
+		}
+		i.fa-flickr {
+			background-color: #0063dc;
+		}
+		i.fa-youtube {
+			background-color: #cd201f;
+		}
+	}
+}
+footer {
+	background-color: red;
+	text-align: center;
+	.copy {
+		color: white;
+		font-size: 1.25em;
+	}
+}
+
+.gallery {
+	ul {
+		width: (100px * 3);
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			width: 100px;
+		}
+		img {
+			display: flex;
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+
+
+
+
+
+
+

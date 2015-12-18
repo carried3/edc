@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+html {
+  height: 100%;
+  background-image: url("../img/wood.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body main {
+  width: 510px;
+}
+body main > img {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
+  margin: 5px;
+}
+body .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+body .overlay .close {
+  cursor: pointer;
+  opacity: .25;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3vw;
+  height: 3vw;
+  display: block;
+  background-image: url("../img/close.svg");
+  background-position: center;
+  background-size: cover;
+}
+body .overlay .close:hover {
+  opacity: 1;
+}
+body .overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 90%;
+  max-height: 90%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+body .overlay i {
+  color: white;
+  -webkit-filter: drop-shadow(0 0 3px black);
+          filter: drop-shadow(0 0 3px black);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
